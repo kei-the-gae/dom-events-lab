@@ -13,23 +13,11 @@ calculator.addEventListener("click", (event) => {
         console.log(display.textContent);
     };
     if (event.target.classList.contains("operator") && event.target.textContent != "C") {
-        num1 = (parseInt(display.textContent));
+        num1 = parseInt(display.textContent);
+        operator = event.target.textContent;
         display.textContent = "";
-        console.log(num1);
-        console.log(typeof (num1));
-    }
-    if (event.target.innerText === "+") {
-        //do something
     };
-    if (event.target.innerText === "-") {
-        //do something
-    };
-    if (event.target.innerText === "*") {
-        //do something
-    };
-    if (event.target.innerText === "/") {
-        //do something
-    };
+
     if (event.target.innerText === "=") {
         //do something
     };
