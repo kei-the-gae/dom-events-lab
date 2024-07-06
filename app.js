@@ -27,6 +27,7 @@ calculator.addEventListener("click", (event) => {
         display.textContent = calculate[operator](num1, num2);
         num1 = parseInt(display.textContent);
         num2 = 0;
+        operator = "";
     };
     if (event.target.innerText === "C") {
         operator = "";
