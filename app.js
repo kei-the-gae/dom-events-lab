@@ -1,37 +1,29 @@
-/*-------------------------------- Constants --------------------------------*/
-
 const calculator = document.querySelector("#calculator");
-
-/*-------------------------------- Variables --------------------------------*/
-
-/*------------------------ Cached Element References ------------------------*/
-
-/*----------------------------- Event Listeners -----------------------------*/
+const display = document.querySelector(".display");
 
 calculator.addEventListener("click", (event) => {
     console.log(event.target.innerText);
 
     if (event.target.classList.contains("number")) {
-        //do something
-    }
+        display.textContent += event.target.innerText;
+    };
     if (event.target.innerText === "+") {
         //do something
-    }
+    };
     if (event.target.innerText === "-") {
         //do something
-    }
+    };
     if (event.target.innerText === "*") {
         //do something
-    }
+    };
     if (event.target.innerText === "/") {
         //do something
-    }
+    };
     if (event.target.innerText === "=") {
         //do something
-    }
+    };
     if (event.target.innerText === "C") {
         //do something
-    }
-})
+    };
+});
 
-/*-------------------------------- Functions --------------------------------*/
