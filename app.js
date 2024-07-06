@@ -15,7 +15,6 @@ calculator.addEventListener("click", (event) => {
 
     if (event.target.classList.contains("number")) {
         display.textContent += event.target.innerText;
-        console.log(display.textContent);
     };
     if (event.target.classList.contains("operator") && event.target.textContent != "C") {
         num1 = parseInt(display.textContent);
@@ -30,7 +29,10 @@ calculator.addEventListener("click", (event) => {
         num2 = 0;
     };
     if (event.target.innerText === "C") {
-        //do something
+        operator = "";
+        num1 = 0;
+        num2 = 0;
+        display.textContent = "";
     };
 });
 
